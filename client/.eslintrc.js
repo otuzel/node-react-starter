@@ -13,18 +13,19 @@ module.exports = {
     'eslint:recommended',
     'plugin:react/recommended',
     'plugin:import/recommended',
-    'plugin:import/errors',
-    'plugin:import/warnings',
     'plugin:react-hooks/recommended',
     'plugin:react/jsx-runtime',
+    'plugin:testing-library/react',
+    'plugin:jest/recommended',
+    'plugin:jest-dom/recommended',
     'plugin:prettier/recommended',
   ],
-  plugins: ['react', 'import', 'jsx-a11y', 'react-hooks', '@babel'],
+  plugins: ['babel', 'jsx-a11y', 'react', 'react-hooks', 'import'],
   env: {
     browser: true,
     es6: true,
     node: true,
-    // jest: true,
+    jest: true,
   },
   root: true,
   settings: {
@@ -69,10 +70,18 @@ module.exports = {
         browser: true,
         es2021: true,
       },
-      extends: ['plugin:@typescript-eslint/recommended'],
+      extends: [
+        'plugin:@typescript-eslint/recommended',
+        'plugin:import/typescript',
+      ],
       rules: {
         'react/jsx-filename-extension': 0,
       },
+    },
+    {
+      // eslint-plugin-testing-library rules or preset only for matching files
+      files: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[jt]s?(x)'],
+      extends: ['plugin:testing-library/react'],
     },
   ],
 };
