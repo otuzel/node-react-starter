@@ -2,7 +2,6 @@ const path = require('path');
 const webpack = require('webpack');
 const Dotenv = require('dotenv-webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const AntdDayjsWebpackPlugin = require('antd-dayjs-webpack-plugin');
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
 
@@ -73,7 +72,6 @@ const config = {
       template: path.resolve(__dirname, '/src', 'index.html'),
     }),
     new Dotenv({ path: '../.env' }),
-    new AntdDayjsWebpackPlugin(),
   ],
 };
 
