@@ -3,12 +3,12 @@ import { string, bool } from 'prop-types';
 
 import { $Header, $Logo } from './styles';
 
-const Header = ({ exampole }) => {
+const Header = ({ example }) => {
   return (
     <$Header>
       <$Logo>
         <Link to="/">Node React Starter</Link>
-        {test}
+        {example}
       </$Logo>
     </$Header>
   );
