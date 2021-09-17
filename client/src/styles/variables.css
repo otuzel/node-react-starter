@@ -1,0 +1,32 @@
+:root {
+  /* TODO: To be updated, just an example */
+
+  /* FONT FAMILY -------------------------------------------------- */
+  --font-family: 'Lato', sans-serif;
+
+  /* FONT SIZE -------------------------------------------------- */
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-lg: 1.125rem;
+  --fs-xl: 1.25rem;
+  --fs-2xl: 1.5rem;
+  --fs-3xl: 1.875rem;
+  --fs-4xl: 2.25rem;
+
+  /* COLORS -------------------------------------------------- */
+  --color-background: #f7faff;
+  --color-background-dark: rgba(133, 204, 255, 0.15);
+  --color-border: 'gray';
+  --color-border-dark: #85ccff;
+  --color-main: #224dff;
+  --color-main-dark: #0b2fc4;
+  --color-positive: #45c42d;
+  --color-negative: #ff5267;
+  --color-notification: #f7c132;
+  --color-info: #224dff;
+  --color-body-light: rgba(18, 67, 138, 0.7);
+  --color-body: #12438a;
+  --color-body-dark: #090f29;
+  --color-shadow: rgba(9, 15, 41, 0.4);
+}

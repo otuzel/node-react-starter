@@ -45,7 +45,7 @@ module.exports = {
     'no-unused-vars': 2,
     'react/function-component-definition': 0,
     'react/boolean-prop-naming': 0,
-    'react/prop-types': 1,
+    'react/prop-types': 2,
     'react-hooks/exhaustive-deps': 1,
     'react/display-name': 0,
     'react/jsx-filename-extension': 0,

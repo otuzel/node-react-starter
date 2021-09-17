@@ -1,0 +1,16 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+section {
+  border: 1px solid #bbb;
+  padding: 20px;
+  margin-bottom: 20px;
+}

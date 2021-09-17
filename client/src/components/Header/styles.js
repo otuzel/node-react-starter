@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const $Header = styled.div`
-  border-bottom: 1px solid #1a1d21;
+  border-bottom: 2px solid #1a1d21;
   display: flex;
   height: 90px;
   padding: 20px 15px 15px;

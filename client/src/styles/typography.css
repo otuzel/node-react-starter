@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+body {
+  font-family: var(--font-family), sans-serif;
+  font-weight: 300;
+}
+
+/*TODO - Example font usage from local folder */
+/* @font-face {
+  font-family: Futura;
+  src: url('/src/assets/fonts/futurastd-book/FuturaStd-Book.eot');
+  src: url('/src/assets/fonts/futurastd-book/FuturaStd-Book.eot?#iefix')
+      format('embedded-opentype'),
+    url('/src/assets/fonts/futurastd-book/FuturaStd-Book.woff2') format('woff2'),
+    url('/src/assets/fonts/futurastd-book/FuturaStd-Book.woff') format('woff'),
+    url('/src/assets/fonts/futurastd-book/FuturaStd-Book.ttf')
+      format('truetype');
+  font-display: swap;
+}
+
+body {
+  color: #222;
+  font-family: Futura, sans-serif;
+} */

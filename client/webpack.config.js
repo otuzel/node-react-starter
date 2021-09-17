@@ -49,7 +49,10 @@ const config = {
         exclude: /node_modules/,
         loader: 'source-map-loader',
       },
-
+      {
+        test: /\.(png|jpg|webp|gif|woff|woff2|eot|ttf|otf|mp4)$/,
+        use: ['file-loader'],
+      },
       {
         test: /\.svg$/,
         use: [
