@@ -14,6 +14,7 @@ const config = {
   mode,
   devServer: {
     hot: true,
+    port: 3000,
   },
   // the app entry point is /src/index.js
   entry: path.resolve(__dirname, '/src', 'index.js'),
