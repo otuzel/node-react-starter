@@ -2,8 +2,9 @@ import { QueryClient, QueryClientProvider } from 'react-query';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import ErrorBoundary from 'src/components/ErrorBoundary';
-import Header from 'src/components/Header';
 import NotFound from 'src/components/NotFound';
+
+import Layout from 'src/components/Layout';
 import Home from 'src/pages/Home';
 
 import 'src/styles';
@@ -15,11 +16,12 @@ const App = () => {
     <QueryClientProvider client={queryClient}>
       <BrowserRouter>
         <ErrorBoundary>
-          <Header example={'yo'} />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/*" element={<NotFound />} />
-          </Routes>
+          <Layout>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/*" element={<NotFound />} />
+            </Routes>
+          </Layout>
         </ErrorBoundary>
       </BrowserRouter>
     </QueryClientProvider>

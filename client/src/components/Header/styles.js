@@ -1,10 +1,9 @@
 import styled from 'styled-components';
 
-export const $Header = styled.div`
-  border-bottom: 2px solid #1a1d21;
-  display: flex;
-  height: 90px;
-  padding: 20px 15px 15px;
+import { container } from 'src/styles/mixins';
+
+export const $Container = styled.div`
+  ${container}
 `;
 
 export const $Logo = styled.div`
@@ -14,4 +13,10 @@ export const $Logo = styled.div`
     text-decoration: none;
     color: inherit;
   }
+`;
+
+export const $SummaryWrapper = styled.div`
+  background: #efefef;
+  border-bottom: 1px solid #dbdbdb;
+  border-top: 1px solid #c5c5c5;
 `;
