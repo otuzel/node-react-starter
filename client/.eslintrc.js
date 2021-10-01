@@ -20,7 +20,7 @@ module.exports = {
     'plugin:jest-dom/recommended',
     'plugin:prettier/recommended',
   ],
-  plugins: ['babel', 'jsx-a11y', 'react', 'react-hooks', 'import'],
+  plugins: ['@babel', 'jsx-a11y', 'react', 'react-hooks', 'import'],
   env: {
     browser: true,
     es6: true,
@@ -32,8 +32,12 @@ module.exports = {
     'import/extensions': ['.js', '.jsx', '.ts', '.tsx'],
     'import/resolver': {
       node: {
+        moduleDirectory: ['node_modules', './'],
         extensions: ['.js', '.jsx', '.ts', '.tsx', '.d.ts'],
       },
+    },
+    jest: {
+      version: 27,
     },
     react: {
       version: 'detect',
